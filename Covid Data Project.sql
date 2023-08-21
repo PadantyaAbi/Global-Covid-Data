@@ -115,23 +115,3 @@ where dea.continent is not null
 
 select * 
 from VaccinePercentageview
-
-
-
-
-
-
-------------abaikan dibawah ini-------------------------------------
---SELECT A.objID, name, des,  right(Replace(Ltrim(Replace(substring(my_nvarcharcolumn,1,9), '0', ' ')), ' ', '0'),10) AS new_nvarcharcolumn 
---INTO #tmp1
---FROM [database].[dbo].[tblname] AS A
---INNER JOIN (SELECT * FROM [database].[dbo].tblname1 WHERE sourceID = 32) AS AI ON source = A.objID
---INNER JOIN [database].[dbo].tblname2 AS I ON I.ObjectID = A.Source
-
---SELECT MAX(m_dAddDate) AS date_Asof, dnum INTO #tmp2 FROM 
---(SELECT * FROM [database].[dbo].tblname WHERE senior <> '' AND class = 'SSS') AS A
---GROUP BY dnum
-
---SELECT DISTINCT A.* INTO #tmp3 FROM #tmp1 AS A
---INNER JOIN #tmp2 AS SD ON SD.dnum =cast(A.new_nvarcharcolumn as INT)
---INNER JOIN database.[dbo].tbl4 AS M ON M.dnum = cast(A.new_nvarcharcolumn as INT)  AND SD.date_Asof = M.adddate
